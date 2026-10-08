@@ -2,17 +2,21 @@ const datejs = require('datejs');
 
   function combineUsers(...args) {
   const combinedObject={
-  users:[] 
+  users:[] ,
+  merge_date:[]
    }
  
 
 for (const userArr of args) {
     combinedObject.users = [...combinedObject.users, ...userArr];
   }
+
+//   [
+//     ["Alice", "Bob"],
+//     ["Charlie"],
+//     ["David", "Eve"]
+// ]
  
-  const merge_date={
-    []
-  }
 return combinedObject;
   }
 
